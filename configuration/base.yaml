@@ -1,0 +1,17 @@
+application:
+  port: 8000
+  hmac_secret: "long-and-very-secret-random-key-needed-to-verify-message-integrity"
+database:
+  host: "127.0.0.1"
+  port: 5432
+  username: "xring"
+  password: ""
+  database_name: "newsletter"
+email_client:
+  # Value retrieved from Postmark's API documentation
+  base_url: "https://api.postmarkapp.com"
+  # Use the single sender email you authorised on Postmark!
+  sender_email: "something@gmail.com"
+  authorization_token: "abcdefg"
+  timeout_milliseconds: 10000
+redis_uri: "redis://127.0.0.1:6379"
